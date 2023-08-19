@@ -13,10 +13,10 @@ pipeline {
       }
     }
 
-    stage('Log into dockerhub') {
+    stage('Log into docker hub') {
       environment {
         username = 'hashim715'
-        password = 'pakistan@715'
+        password = 'pakistan@715petarian'
       }
       steps {
         powershell 'docker login -u $env:username -p $env:password'

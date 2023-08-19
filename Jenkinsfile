@@ -13,11 +13,5 @@ pipeline {
       }
     }
 
-    stage('Log into dockerhub') {
-      steps {
-        powershell 'docker login -u hashim715 -p pakistan@715petarian'
-      }
-    }
-
   }
 }
